@@ -1,0 +1,21 @@
+.input_login{
+                height: 40px;
+            }
+            
+            #submit_login{
+                height: 50px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: 20px;
+            }
+            .aligner{
+                padding-left: 10px;
+/*                padding-right: 10px;*/
+            }
+            .alt{
+                color: #ee6e73;
+            }
+            fieldset{
+                border: 0px;
+            }
+

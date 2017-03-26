@@ -1,0 +1,60 @@
+            .thumbnail{
+                height: 140px;
+                width: 200px;
+            }
+            .about{
+                color: black;
+            }
+            .ratings{
+                display: inline;
+                color: #fbc02d;
+            }
+            .aligner{
+                padding-left: 10px;
+/*                padding-right: 10px;*/
+            }
+
+            .distance{
+                font-size: 10px !important;
+                padding-left: 1px;
+            }
+            #white-tabs{
+                background-color: #fafafa;
+            }
+            .new-item{
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+            }
+            
+            .cc{
+                display: inline; 
+                margin-right: 3px;
+/*                margin-left: 3px;*/
+                
+            }
+            .dot{
+                font-size: 6px !important;
+                margin-right: 0px !important;
+                width: 7px !important;
+            }
+            .body-info{
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+            }
+            .buttons{
+                display: block;
+            }
+            .button{
+                margin-bottom: 10px;
+/*                width: 173.469px;*/
+            }
+            .active .collapsible-body{
+                height: 150px;
+            }
+            .container_x{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            fieldset{
+                border: 0px;
+            }

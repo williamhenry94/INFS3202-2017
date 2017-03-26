@@ -1,0 +1,34 @@
+.about{
+                color: black;
+            }
+             #map {
+                height: 50%;
+              }
+            .ratings{
+                display: inline;
+                color: #fbc02d;
+            }
+            .aligner{
+                padding-left: 10px;
+/*                padding-right: 10px;*/
+            }
+            .thumbnail{
+/*                width: 200px !important;*/
+                height: 150px;
+            }
+            .price{
+                display: inherit;
+            }
+            .tag{
+                padding-top: 10px;
+            }
+            #reserve{
+                width: 350px;
+            }
+            .distance{
+                font-size: 10px !important;
+                padding-left: 1px;
+            }
+            fieldset{
+                border: 0px;
+            }

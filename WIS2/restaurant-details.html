@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+    <head>
+        <title>TABLEDASH. Restaurant Booking System</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link rel="stylesheet" href="css/materialize.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/restaurant-details.css"/>
+    </head>
+    <body>
+         <div class="navbar-fixed">
+                <ul id="dropdown" class="dropdown-content">
+                    <li><a href="edit-profile.html">Edit Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="edit-profile.html">Edit Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                <nav>
+                    
+                    <div class="nav-wrapper aligner">
+                        <a href="#" class="brand-logo">TABLEDASH</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i>
+</a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="dashboard.html">Home</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li>
+                                <a href="#!" class="dropdown-button full_name" data-activates="dropdown1">          
+                                </a>
+                            </li>
+<!--                            <li><a href="signup.html">Register</a></li>-->
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="dashboard.html">Home</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li>
+                                <a href="#!" class="dropdown-button full_name" data-activates="dropdown">
+                                </a>
+                            </li>
+<!--                            <li><a href="signup.html">Register</a></li>-->
+                        </ul>
+                    </div>
+                 </nav>
+            </div>
+        
+        <!-- Main -->
+        <main>
+            
+               
+            <section id="top">
+                <div class="parallax-container">
+                    <div class="parallax"><img src="images/restaurant/boatshed.png" alt="boatshed"></div>
+                </div>
+            </section>
+            <section id="two">
+                <div class="container container_x">
+                    <h4 class="white-text">The Boatshed</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="price">
+                        <i class="fa fa-usd white-text" aria-hidden="true"></i>
+                        <i class="fa fa-usd white-text" aria-hidden="true"></i>
+                        <i class="fa fa-usd white-text" aria-hidden="true"></i>
+                        <i class="fa fa-usd white-text" aria-hidden="true"></i>
+                        <small class="white-text distance">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            5 Km
+                        </small>
+                    </div>
+                    <div class="tag">
+                        <div class="chip">
+                            Western
+                        </div>
+                        <div class="chip">
+                            Steak
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section white">
+                <div class="container container_x">
+                    <p><i class="material-icons left blue-text">phone</i>+61432092174</p>
+                    <p><i class="material-icons left blue-text">email</i><a href="mailto:boatshed@regatta_h.com" target="_top">boatshed@regatta_h.com</a></p>
+                    <p><i class="fa fa-globe blue-text fa-2x left global" aria-hidden="true"></i><a href="http://www.regattahotel.com.au/regatta-bars-brisbane/boatshed-bar/">The Boatshed</a></p>
+                </div>
+                <div class="container container_x">
+                    <p><i>The most prestigious restaurant in Brisbane. Now you can book the table early with TableDash.</i></p>
+                </div>
+                <div class="container container_x">
+                    <a href="#menu" class="modal-trigger btn waves-effect waves-light">VIEW MENU</a>
+                    <a href="#reserve" class="modal-trigger btn waves-effect waves-light">BOOK TABLE</a>
+                </div>
+            </section>
+            <section class="section white">
+                <div class="container container_x">
+                    <h5 class="location_title">LOCATION</h5>
+                    <div id="map"></div>
+                </div>
+            </section>
+            <div id="menu" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <header>
+                                <h4>Menu</h4>
+                                <hr>
+                            </header>
+<!--                            <main>-->
+                                <h6>SYDNEY ROCK OYSTERS</h6>
+                                <section>
+                                    <h6>Freshly Shucked on the Premises</h6>
+                                    <small style="color:#757575;">natural, kilpatrick, chilli-coriander</small>
+                                    <ul>
+                                        <li class="menu-item"><pre>Half Doz            $20.00</pre></li>
+                                        <li class="menu-item"><pre>Doz                 $20.00</pre></li>
+                                    </ul>
+                                    <h6>Salmon Caviar, Avocado, Verjuice Jelly</h6>
+                                    <ul>
+                                        <li class="menu-item"><pre>Each                $4.50</pre></li>
+                                    </ul>
+                                    <h6>Bloody Mary Oyster Shooter</h6>
+                                    <ul>
+                                        <li class="menu-item"><pre>Each                $7.00</pre></li>
+                                    </ul>
+                                </section>
+<!--                            </main>-->
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close btn-flat">Close</a>
+                        </div>
+                    </div>
+                    <div id="reserve" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <header>
+                                <h5>Make a Reservation</h5>
+                                <hr>
+                            </header>
+<!--                            <main>-->
+                                <form action="#" method="post" class="input-field">
+                                    <fieldset>
+                                        <legend>People</legend>
+                                        <select name="people" id="people">
+                                            <option value=1>1</option>
+                                            <option value=2>2</option>
+                                            <option value=3>3</option>
+                                            <option value=5>4</option>
+                                            <option value=6>6</option>
+                                            <option value=7>7</option>
+                                            <option value=8>8</option>
+                                            <option value=9>9</option>
+                                            <option value=10>10</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Date</legend>
+                                        <input type="date" name="data" id="date">
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Time</legend>
+                                        <input type="time" name="time" id="time">
+                                    </fieldset>
+                                </form>
+<!--                            </main>-->
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close btn">BOOK</a>
+                            <a href="#!" class="modal-action modal-close btn-flat">CANCEL</a>
+                        </div>
+                  </div>
+                
+                
+                    
+                
+            
+            
+        </main>
+        
+        <!-- Footer -->
+			<footer class="page-footer">
+              
+				<!-- Copyright -->
+                <div class="footer-copyright">
+                    <div class="container">
+                        &copy; TableDash. All rights reserved.
+                    </div>
+                  </div>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+<!--			<script src="assets/js/jquery.scrolly.min.js"></script>-->
+<!--			<script src="assets/js/jquery.scrollzer.min.js"></script>-->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/materialize.js"></script>
+            
+            <script>
+                var map;
+                function initMap() {
+                    var myLatLng = {lat: -27.4827475, lng: 152.9961161};
+
+                    map = new google.maps.Map(document.getElementById('map'), {
+                      center: myLatLng,
+                      zoom: 16
+                    });
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Hello World!'
+                      });
+                  }
+                
+                $(document).ready(function(){
+                    $(".button-collapse").sideNav(); 
+                    $(".dropdown-button").dropdown();
+                    $('.modal-trigger').leanModal();
+                    $('.parallax').parallax();
+                    $('select').material_select();
+                    var firstName=localStorage.getItem("first_name");
+                    var lastName=localStorage.getItem("last_name");
+                    var fullName=firstName+' '+lastName;
+                    $(".full_name").append(fullName+'<i class="material-icons right">arrow_drop_down</i>'); 
+
+                });
+        
+            </script>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrFwxpOdyI6L3GyM03P5dg0qKNuGOHBww&callback=initMap"></script>
+
+        
+        
+    </body>
+</html>

@@ -1,0 +1,26 @@
+ .input_register{
+                height: 40px;
+            }
+            
+            #submit_register{
+                height: 50px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: 20px;
+            }
+            .aligner{
+                padding-left: 10px;
+/*                padding-right: 10px;*/
+            }
+            #cards{
+                margin-top: 10px;
+            }
+            #card{
+                width: 450px;
+            }
+            .alt{
+                color: #ee6e73;
+            }
+            fieldset{
+                border: 0px;
+            }

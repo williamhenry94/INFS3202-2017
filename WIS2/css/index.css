@@ -1,0 +1,47 @@
+.aligner{
+                padding-left: 10px;
+/*                padding-right: 10px;*/
+            }
+            .thumbnail{
+/*                width: 200px !important;*/
+                height: 150px;
+            }
+            
+            #about{
+                background-color: #ffebee;
+            }
+            .logo-new{
+                text-align: center !important;
+            }
+            
+            #top{
+                background-image: url(images/banner.jpg);
+                color: white;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                height: 300px;
+            }
+            #container-about{
+                padding-top: 20px;
+            }
+            #container-top{
+                text-align: center;
+                margin-top: 30px ;
+/*                margin-bottom: 10px ;*/
+            }
+          
+            #container-bottom{
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 30px;
+            }
+            .join{
+                padding-bottom: 10px; 
+                padding-top: 10px;
+            }
+            #auth{
+                background-color: #eceff1;
+            }
+            fieldset{
+                border: 0px;
+            }

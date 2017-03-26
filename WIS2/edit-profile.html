@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+    <head>
+        <title>TABLEDASH. Restaurant Booking System</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link rel="stylesheet" href="css/materialize.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/edit-profile.css"/>
+
+    </head>
+    <body>
+         <div class="navbar-fixed">
+                <ul id="dropdown" class="dropdown-content">
+                    <li><a href="edit-profile.html">Edit Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="edit-profile.html">Edit Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                <nav>
+                    
+                    <div class="nav-wrapper aligner">
+                        <a href="#" class="brand-logo">TABLEDASH</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i>
+</a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="dashboard.html">Home</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li>
+                                <a href="#!" class="dropdown-button full_name" data-activates="dropdown1">          
+                                </a>
+                            </li>
+<!--                            <li><a href="signup.html">Register</a></li>-->
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="dashboard.html">Home</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li>
+                                <a href="#!" class="dropdown-button full_name" data-activates="dropdown">
+                                </a>
+                            </li>
+<!--                            <li><a href="signup.html">Register</a></li>-->
+                        </ul>
+                    </div>
+                 </nav>
+            </div>
+        
+        <!-- Main -->
+        <main>
+            <section id="top">
+                <div class="container">
+
+                    <header>
+                        <h4 class="alt">Profile</h4>
+                    </header>
+                    <form action="#" method="get" class="form_register input-field">
+                        <fieldset>
+                            <legend>First name</legend>
+
+                            <input type="text" name="first_name" class="input_register" placeholder="John" id="first_name"/>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Last name</legend>
+
+                            <input type="text" name="last_name" class="input_register" placeholder="Appleseed" id="last_name"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Phone Number</legend>
+
+                            <input type="tel" name="phone_number" class="input_register" placeholder="+61432092174" id="phone_number" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || (event.charCode ==43)'/>
+                        </fieldset>
+                        
+                        <a href="change-password.html">Change Password</a>
+                        <br>
+
+                        <a  class="btn waves-effect waves-light" id="submit_register" href="#">Edit <i class="material-icons right">send</i></a>   
+                    </form>
+                </div>
+            </section>
+            <section id="cards">
+                <div class="container">
+
+
+                    <a href="#card" class="modal-trigger"><i class="material-icons left">add</i> Credit Card</a>
+                    <p class="grey-text card-default"><small>No cards</small></p>
+                    <ul class="collapsible card-collection" data-collapsible="accordion" style="display:none;">
+
+                    </ul>
+                    
+                    <div id="card" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <header>
+                                <h5>Add Card</h5>
+                                <hr>
+                            </header>
+<!--                            <main>-->
+                                <div class='card-wrapper'></div>
+                                <form action="#" method="post" class="input-field">
+                                    <input type="text" name="number" id="number" placeholder="Card Number" onkeypress='return (event.charCode >= 48 && event.charCode <= 57)'>
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                    <input type="text" name="expiry" id="expiry" placeholder="Expiry" onkeypress='return (event.charCode >= 47 && event.charCode <= 57)'>
+                                    <input type="text" name="cvc" id="cvc" placeholder="CVC" onkeypress='return (event.charCode >= 48 && event.charCode <= 57)'>
+                                </form>
+<!--                            </main>-->
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close btn add-card">ADD</a>
+                            <a href="#!" class="modal-action modal-close btn-flat">CANCEL</a>
+                        </div>
+                  </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+			<footer class="page-footer">
+               
+				<!-- Copyright -->
+                <div class="footer-copyright">
+                    <div class="container">
+                        &copy; TableDash. All rights reserved.
+                    </div>
+                  </div>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+<!--			<script src="assets/js/jquery.scrolly.min.js"></script>-->
+<!--			<script src="assets/js/jquery.scrollzer.min.js"></script>-->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/materialize.js"></script>
+<!--            <script src="js/materialize.min.js"></script>-->
+            <script>
+                
+                $(document).ready(function(){
+                    $(".button-collapse").sideNav(); 
+                    $(".dropdown-button").dropdown();
+                    $('.modal-trigger').leanModal();
+                    var firstName=localStorage.getItem("first_name");
+                    var lastName=localStorage.getItem("last_name");
+                    var fullName=firstName+' '+lastName;
+                    $(".full_name").append(fullName+'<i class="material-icons right">arrow_drop_down</i>'); 
+                    $("#first_name").val(firstName);
+                    $("#last_name").val(lastName);
+                    $("#phone_number").val(localStorage.getItem("phone_number"));
+                    var counter=0;
+                    var cardSize=parseInt(localStorage.getItem("card-size"));
+                    if(cardSize!==0){
+                        $(".card-default").hide();
+                        $(".card-collection").show();
+                        for(var i=0; i<cardSize;i++){
+                            $(".card-collection").append('<li>'
+                                                             +'<div class="collapsible-header">'
+                                                             +'<i class="material-icons left">credit_card</i>'+localStorage.getItem("card-"+i)
+                                                             +'</div>'
+                                                             +'</li>');
+                            }
+                        counter+=cardSize;
+                    }
+                    
+                    $(document).on('click','#submit_register',function(){
+                        var first_name=$("#first_name").val();
+                        var last_name=$("#last_name").val();
+                        var phone_number=$("#phone_number").val();
+//                        var password=$("#password").val();
+//                        var confirm_password=$("#confirm_password").val();
+                        if(first_name!=='' && last_name!=='' &&
+                            phone_number!==''){
+                            localStorage.setItem('first_name',first_name);
+                            localStorage.setItem('last_name',last_name);
+                            
+                          
+                            localStorage.setItem('phone_number',phone_number);
+                            Materialize.toast('Profile Edited', 4000);
+                            console.log(localStorage);
+//                            window.open('dashboard.html','_self');
+                        }else{
+                            console.error('Something wrong');
+                            Materialize.toast('Failed Editing Profile', 4000);
+                        }
+                    });
+                    
+                    $(document).on("click",".add-card",function(){
+                        var number=$("#number").val();
+                        var expiry=$("#expiry").val();
+                        var name=$("#name").val();
+                        var cvc=$("#cvc").val();
+                        if(number!=='' && expiry!=='' && name!=='' && cvc!==''){
+                            localStorage.setItem("card-"+counter,number);
+                            $(".card-default").hide();
+                            $(".card-collection").show();
+                            $(".card-collection").append('<li>'
+                                                         +'<div class="collapsible-header">'
+                                                         +'<i class="material-icons left">credit_card</i>'+number
+                                                         +'</div>'
+                                                         +'</li>');
+                            counter++;
+                            localStorage.setItem('card-size',counter);
+                            
+                        }
+                    });
+                    
+                    
+                    
+                    
+                });
+        
+            </script>
+
+        
+        
+    </body>
+</html>

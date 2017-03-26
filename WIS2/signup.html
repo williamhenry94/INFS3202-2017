@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <head>
+        <title>TABLEDASH. Restaurant Booking System</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link rel="stylesheet" href="css/materialize.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/signup.css"/>
+    </head>
+    <body>
+         <div class="navbar-fixed">
+                 <nav>
+                    <div class="nav-wrapper aligner">
+                        <a href="#" class="brand-logo">TABLEDASH</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i>
+</a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="signin.html">Sign In</a></li>
+                            <li class="active"><a href="signup.html">Register</a></li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="signin.html">Sign In</a></li>
+                            <li class="active"><a href="signup.html">Register</a></li>
+                        </ul>
+                    </div>
+                 </nav>
+            </div>
+        
+        <!-- Main -->
+        <main>
+            <section id="top">
+						<div class="container">
+
+							<header>
+								<h4 class="alt">Create your Account Today</h4>
+
+							</header>
+                            <form action="#" method="get" class="form_register input-field">
+                                    <fieldset>
+                                        <legend>Email</legend>
+
+                                        <input type="email" name="email" class="input_register" placeholder="example@gmail.com" id="email"/>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>First name</legend>
+
+                                        <input type="text" name="first_name" class="input_register" placeholder="John" id="first_name"/>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Last name</legend>
+
+                                        <input type="text" name="last_name" class="input_register" placeholder="Appleseed" id="last_name"/>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Password</legend>
+
+                                        <input type="password" name="password" class="input_register" placeholder="Secret" id="password"/>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Confirm Password</legend>
+
+                                        <input type="password" name="confirm_password" class="input_register" placeholder="Secret" id="confirm_password"/>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Phone Number</legend>
+
+                                        <input type="tel" name="phone_number" class="input_register" placeholder="+61432092174" id="phone_number" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || (event.charCode ==43)'/>
+                                        
+                                    </fieldset>   
+                                    <a  class="btn waves-effect waves-light" id="submit_register" href="#">Register <i class="material-icons right">send</i></a>
+                                     
+                                
+                                   
+                                   
+                                </form>
+
+
+
+						</div>
+					</section>
+        </main>
+        
+        <!-- Footer -->
+			<footer class="page-footer">
+               
+				<!-- Copyright -->
+                <div class="footer-copyright">
+                    <div class="container">
+                        &copy; TableDash. All rights reserved.
+                    </div>
+                  </div>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+<!--			<script src="assets/js/jquery.scrolly.min.js"></script>-->
+<!--			<script src="assets/js/jquery.scrollzer.min.js"></script>-->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/materialize.js"></script>
+<!--            <script src="js/materialize.min.js"></script>-->
+            <script>
+                $(document).ready(function(){
+                    $(".button-collapse").sideNav(); 
+                    $(document).on('click','#submit_register',function(){
+                        var first_name=$("#first_name").val();
+                        var last_name=$("#last_name").val();
+                        var phone_number=$("#phone_number").val();
+                        var email=$("#email").val();
+                        var password=$("#password").val();
+                        var confirm_password=$("#confirm_password").val();
+                        if(confirm_password==password && confirm_password!=='' &&
+                          password!=='' && first_name!=='' && last_name!=='' &&
+                          email!=='' && phone_number!==''){
+                            localStorage.setItem('first_name',first_name);
+                            localStorage.setItem('last_name',last_name);
+                            localStorage.setItem('email',email);
+                            localStorage.setItem('password',password);
+                            localStorage.setItem('phone_number',phone_number);
+                            localStorage.setItem('confirm_password',confirm_password);
+                            localStorage.setItem('card-size',0);
+                            console.log(localStorage);
+                            window.open('dashboard.html','_self');
+                        }else{
+                            console.error('Something wrong');
+                            Materialize.toast('Invalid Input',4000);
+                        }
+                    });
+                    
+                    
+                });
+        
+            </script>
+
+        
+        
+    </body>
+</html>

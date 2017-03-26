@@ -1,0 +1,52 @@
+.aligner{
+                padding-left: 10px;
+/*                padding-right: 10px;*/
+            }
+            
+            #two{
+                background-color: #ee6e73;
+                padding-top: 5px;
+                padding-bottom: 10px;
+            }
+/*
+            #restaurant{
+                margin-bottom: 20px;
+            }
+*/
+            .tag{
+                padding-top: 10px;
+            }
+            .ratings{
+                display: inline;
+                color: #ffffff;
+            }
+            .container_x{
+                padding-bottom: 10px;
+            }
+            .chip{
+                color: #ee6e73;
+                background-color: #ffffff;
+            }
+            .price{
+                display: inherit;
+            }
+            .distance{
+                font-size: 10px !important;
+                padding-left: 1px;
+            }
+            .global{
+                margin-right: 12px !important;
+            }
+            #reserve{
+                width: 350px;
+            }
+            .location_title{
+                color: #ee6e73;
+                text-align: center;
+            }
+            #map {
+                height: 500px;
+            }
+            fieldset{
+                border: 0px;
+            }

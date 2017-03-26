@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+    <head>
+        <title>TABLEDASH. Restaurant Booking System</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link rel="stylesheet" href="css/materialize.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/history.css"/>
+        
+    </head>
+    <body>
+        
+        <div class="navbar-fixed">
+                <ul id="dropdown" class="dropdown-content">
+                    <li><a href="edit-profile.html">Edit Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="edit-profile.html">Edit Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                <nav>
+                    
+                    <div class="nav-wrapper aligner">
+                        <a href="#" class="brand-logo">TABLEDASH</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i>
+</a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="dashboard.html">Home</a></li>
+                            <li class="active"><a href="history.html">History</a></li>
+                            <li>
+                                <a href="#!" class="dropdown-button full_name" data-activates="dropdown1">          
+                                </a>
+                            </li>
+<!--                            <li><a href="signup.html">Register</a></li>-->
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="dashboard.html">Home</a></li>
+                            <li class="active"><a href="history.html">History</a></li>
+                            <li>
+                                <a href="#!" class="dropdown-button full_name" data-activates="dropdown">
+                                </a>
+                            </li>
+<!--                            <li><a href="signup.html">Register</a></li>-->
+                        </ul>
+                    </div>
+                 </nav>
+            </div>
+        
+        <!-- Main -->
+			<main>
+			<!-- Restaurants -->
+					<section id="top">
+                          
+                            <div class="container">
+
+                                <header>
+                                    <h4>History</h4>
+                                </header>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                          <ul class="tabs" id="white-tabs">
+                                            <li class="tab col s4 "><a class="active" href="#all">All</a></li>
+                                            <li class="tab col s4"><a href="#inprogress">In Progress</a></li>
+                                            <li class="tab col s4 "><a href="#done">Done</a></li>
+                                          </ul>
+                                        </div>
+                                        <div id="all" class="col s12 l12">
+                                             <ul class="collapsible" data-collapsible="expandable">
+                                                <li class="new-item">
+                                                    <div class="collapsible-header">
+                                                        <div class="col s4 l3">
+                                                            Date 
+                                                        </div>
+                                                        <div class="col s5 l3">
+                                                            Place 
+                                                        </div>
+                                                        <div class="col s3 l3">
+                                                            Price
+                                                        </div>
+
+                                                        <div class="col hide-on-med-and-down l3">
+                                                            Status
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="new-item">
+                                                    <div class="collapsible-header">
+                                                        <div class="col s4 l3">
+                                                            19/04/2016 
+                                                        </div>
+                                                        <div class="col s5 l3">
+                                                            Riverside + Bar 
+                                                        </div>
+                                                        <div class="col s3 l3">
+                                                            A$56.00
+                                                        </div>
+
+
+                                                        <div class="col hide-on-med-and-down l3">
+                                                            <span class="status-riverbar-1">In progress</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <div class="container_x">
+                                                            <div class="col hide-on-med-and-down l4">
+                                                                <img src="images/restaurant/riverbar.png" class="thumbnail" alt="riverbar">
+                                                            </div>
+                                                            <div class="col s6 l4">
+                                                                <p class="body-info"><strong>A$56.00</strong></p>
+                                                                <p class="body-info">
+                                                                    <small class="cc">
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                    </small>
+                                                                    0993
+                                                                </p>
+                                                                <p class="body-info">Brisbane</p>
+                                                                <p class="body-info grey-text"><small>Tuesday, April 19 2016 08:20 PM</small></p>
+                                                            </div>
+                                                            <div class="col s6 l4">
+                                                                <div class="ratings">
+                                                                    <span class="grey-text"><small>No ratings yet</small></span>
+<!--
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+-->
+                                                                </div>
+                                                                <div class="buttons">
+<!--                                                                    <a class="waves-effect waves-light btn button split split-riverbar-1" id="split-riverbar-1">Split Check</a>-->
+                                                                    <a class="waves-effect waves-light btn red button cancel cancel-riverbar-1" id="all-cancel-riverbar-1">Cancel Booking</a>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li class="new-item">
+                                                    <div class="collapsible-header">
+                                                        <div class="col s4 l3">
+                                                            19/04/2016 
+                                                        </div>
+                                                        <div class="col s5 l3">
+                                                            Riverside + Bar 
+                                                        </div>
+                                                        <div class="col s3 l3">
+                                                            A$37.00
+                                                        </div>
+
+
+                                                        <div class="col hide-on-med-and-down l3">
+                                                            <span class="status-riverbar-2">Done</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <div class="container_x">
+                                                            <div class="col hide-on-med-and-down l4">
+                                                                <img src="images/restaurant/riverbar.png" class="thumbnail" alt="riverbar">
+                                                            </div>
+                                                            <div class="col s6 l4">
+                                                                <p class="body-info"><strong>A$37.00</strong></p>
+                                                                <p class="body-info">
+                                                                    <small class="cc">
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                    </small>
+                                                                    0993
+                                                                </p>
+                                                                <p class="body-info">Brisbane</p>
+                                                                <p class="body-info grey-text"><small>Tuesday, April 19 2016 08:20 PM</small></p>
+                                                            </div>
+                                                            <div class="col s6 l4">
+                                                                <div class="ratings">
+                                                                    <a class="give-rate rate-riverbar" id="all-rate-riverbar"><small>Give a rate</small></a>
+                                                                    <div class="rating rating-riverbar" style="display:none;" id="all-rating-riverbar">
+                                                                        <i class="fa fa-star-o star star-riverbar star-1" aria-hidden="true" id="all-star-1"></i>
+                                                                        <i class="fa fa-star-o star star-riverbar star-2" aria-hidden="true" id="all-star-2"></i>
+                                                                        <i class="fa fa-star-o star star-riverbar star-3" aria-hidden="true" id="all-star-3"></i>
+                                                                        <i class="fa fa-star-o star star-riverbar star-4" aria-hidden="true" id="all-star-4"></i>
+                                                                        <i class="fa fa-star-o star star-riverbar star-5" aria-hidden="true" id="all-star-5"></i>
+                                                                        <a class="send-rate rated-riverbar" id="all-rated-riverbar" style="display:hidden;"><small>Rate now</small></a>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="buttons">
+                                                                    <a class="waves-effect waves-light btn button split split-riverbar-2 modal-trigger" id="all-split-riverbar-2" href="#split-view">Split Check</a>
+                                                                    <br>
+                                                                    <a href="receipt.html">View Receipt</a>
+<!--                                                                    <a class="waves-effect waves-light btn red button">Cancel Booking</a>-->
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </li>
+                                                 
+
+                                            </ul>
+                                        </div>
+                                        <div id="inprogress" class="col s12 l12">
+                                            <ul class="collapsible" data-collapsible="expandable">
+                                                <li class="new-item">
+                                                    <div class="collapsible-header">
+                                                        <div class="col s4 l3">
+                                                            Date 
+                                                        </div>
+                                                        <div class="col s4 l3">
+                                                            Place 
+                                                        </div>
+                                                        <div class="col s4 l3">
+                                                            Price
+                                                        </div>
+                                                        <div class="col hide-on-med-and-down l3">
+                                                            Status
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="new-item">
+                                                    <div class="collapsible-header">
+                                                        <div class="col s4 l3">
+                                                            19/04/2016 
+                                                        </div>
+                                                        <div class="col s5 l3">
+                                                            Riverside + Bar 
+                                                        </div>
+                                                        <div class="col s3 l3">
+                                                            A$56.00
+                                                        </div>
+
+
+                                                        <div class="col hide-on-med-and-down l3">
+                                                            <span class="status-riverbar-1">In progress</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <div class="container_x">
+                                                            <div class="col hide-on-med-and-down l4">
+                                                                <img src="images/restaurant/riverbar.png" class="thumbnail" alt="riverbar">
+                                                            </div>
+                                                            <div class="col s6 l4">
+                                                                <p class="body-info"><strong>A$56.00</strong></p>
+                                                                <p class="body-info">
+                                                                    <small class="cc">
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                    </small>
+                                                                    0993
+                                                                </p>
+                                                                <p class="body-info">Brisbane</p>
+                                                                <p class="body-info grey-text"><small>Tuesday, April 19 2016 08:20 PM</small></p>
+                                                            </div>
+                                                            <div class="col s6 l4">
+                                                                <div class="ratings">
+                                                                    <span class="grey-text"><small>No ratings yet</small></span>
+<!--
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+-->
+                                                                </div>
+                                                                <div class="buttons">
+<!--                                                                    <a class="waves-effect waves-light btn button split split-riverbar-1" id="split-riverbar-1">Split Check</a>-->
+                                                                    <a class="waves-effect waves-light btn red button cancel cancel-riverbar-1" id="inprogress-cancel-riverbar-1">Cancel Booking</a>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="done" class="col s12 l12">
+                                            <ul class="collapsible" data-collapsible="expandable">
+                                                <li class="new-item">
+                                                    <div class="collapsible-header">
+                                                        <div class="col s4 l3">
+                                                            Date 
+                                                        </div>
+                                                        <div class="col s4 l3">
+                                                            Place 
+                                                        </div>
+                                                        <div class="col s4 l3">
+                                                            Price
+                                                        </div>
+                                                        <div class="col hide-on-med-and-down l3">
+                                                            Status
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="new-item">
+                                                    <div class="collapsible-header">
+                                                        <div class="col s4 l3">
+                                                            19/04/2016 
+                                                        </div>
+                                                        <div class="col s5 l3">
+                                                            Riverside + Bar 
+                                                        </div>
+                                                        <div class="col s3 l3">
+                                                            A$37.00
+                                                        </div>
+
+
+                                                        <div class="col hide-on-med-and-down l3">
+                                                            <span class="status-riverbar-2">Done</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <div class="container_x">
+                                                            <div class="col hide-on-med-and-down l4">
+                                                                <img src="images/restaurant/riverbar.png" class="thumbnail" alt="riverbar">
+                                                            </div>
+                                                            <div class="col s6 l4">
+                                                                <p class="body-info"><strong>A$37.00</strong></p>
+                                                                <p class="body-info">
+                                                                    <small class="cc">
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                        <i class="fa fa-circle dot" aria-hidden="true"></i>
+                                                                    </small>
+                                                                    0993
+                                                                </p>
+                                                                <p class="body-info">Brisbane</p>
+                                                                <p class="body-info grey-text"><small>Tuesday, April 19 2016 08:20 PM</small></p>
+                                                            </div>
+                                                            <div class="col s6 l4">
+                                                                <div class="ratings">
+                                                                    <a class="give-rate rate-riverbar" id="done-rate-riverbar"><small>Give a rate</small></a>
+                                                                    <div class="rating rating-riverbar" style="display:none;" id="done-rating-riverbar">
+                                                                        <i class="fa fa-star-o star star-riverbar star-1" aria-hidden="true" id="done-star-1"></i>
+                                                                        <i class="fa fa-star-o star star-riverbar star-2" aria-hidden="true" id="done-star-2"></i>
+                                                                        <i class="fa fa-star-o star star-riverbar star-3" aria-hidden="true" id="done-star-3"></i>
+                                                                        <i class="fa fa-star-o star star-riverbar star-4" aria-hidden="true" id="done-star-4"></i>
+                                                                        <i class="fa fa-star-o star star-riverbar star-5" aria-hidden="true" id="done-star-5"></i>
+                                                                        <a class="send-rate rated-riverbar" id="done-rated-riverbar" style="display:hidden;"><small>Rate now</small></a>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="buttons">
+                                                                    <a class="waves-effect waves-light btn button split split-riverbar-2 modal-trigger" id="done-split-riverbar-2" href="#split-view">Split Check</a>
+                                                                    <br>
+                                                                    <a href="receipt.html">View Receipt</a>
+<!--                                                                    <a class="waves-effect waves-light btn red button">Cancel Booking</a>-->
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                           
+                            </div>
+                </section>
+                <div id="split-view" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <header>
+                                <h4>Split Check</h4>
+                                <hr>
+                            </header>
+<!--                            <main>-->
+                                <form action="#" method="post">
+                                    <table id="participants" class="bordered">
+                                        <tr>
+                                            <td><span class="blue-text" id="add-participant"><i class="material-icons left">add</i> Participant</span></td>
+                                            <td colspan="2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Participant's email</td>
+                                            <td>Dish</td>
+                                            <td>Percentage</td>
+                                        </tr>
+<!--                                        <div id="participant-1-menu-1">-->
+                                            <tr>
+                                                <td><input type="email" id="email-1" name="email-1"/></td>
+                                                <td>
+                                                    <select id="1-menu-1" name="1-menu-1">
+                                                        <option>Oyster</option>
+                                                        <option>Fish & Chips</option>
+                                                        <option>Latte</option>
+                                                    </select>
+                                                </td>
+                                                <td><input type="text" id="1-percentage-1" name="1-percentage-1"></td>
+                                            </tr>
+<!--                                        </div>-->
+                                        <tr>
+                                            <td><small class="blue-text add-menu" id="add-menu-1"><i class="material-icons left">add</i> Menu</small></td>
+                                            <td colspan="2"></td>
+                                        </tr>
+                                    </table>
+                                </form>
+<!--                            </main>-->
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <a  class="btn waves-effect waves-light modal-action modal-close" id="submit_register" href="#">SEND <i class="material-icons right">send</i></a> 
+                            <a href="#!" class="modal-action modal-close btn-flat">Close</a>    
+                        </div>
+                    </div>
+
+
+			</main>
+        <!-- Footer -->
+			<footer class="page-footer">
+				<!-- Copyright -->
+                <div class="footer-copyright">
+                    <div class="container">
+                        &copy; TableDash. All rights reserved.
+                    </div>
+                  </div>
+
+			</footer>
+            
+
+		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+<!--			<script src="assets/js/jquery.scrolly.min.js"></script>-->
+<!--			<script src="assets/js/jquery.scrollzer.min.js"></script>-->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/materialize.js"></script>
+<!--            <script src="js/materialize.min.js"></script>-->
+            <script>
+                $(document).ready(function(){
+                    $(".dropdown-button").dropdown();
+                    $(".button-collapse").sideNav();
+                    $('.modal-trigger').leanModal();
+                    $('select').material_select();
+                    var firstName=localStorage.getItem("first_name");
+                    var lastName=localStorage.getItem("last_name");
+                    var fullName=firstName+' '+lastName;
+                    $(".full_name").append(fullName+'<i class="material-icons right">arrow_drop_down</i>'); 
+                    $(document).on("click",".give-rate",function(){
+                        var idS=this.id.split("-");
+                        $(".rate-"+idS[2]).hide();
+                        $(".rating-"+idS[2]).show(); 
+                    });
+                    $(document).on("click",".star",function(){
+                        console.log(this.id); 
+                        var idS=this.id.split("-");
+                        $("#rated-"+idS[2]).show();
+                        var idNew=idS[1]+"-"+idS[2];
+                        if(idNew=="star-1"){
+                            $(".star-1").removeClass("fa-star-o");
+                            $(".star-1").addClass("fa-star");
+                            $(".star-2").removeClass("fa-star");
+                            $(".star-3").removeClass("fa-star");
+                            $(".star-4").removeClass("fa-star");
+                            $(".star-5").removeClass("fa-star");
+                            $(".star-2").addClass("fa-star-o");
+                            $(".star-3").addClass("fa-star-o");
+                            $(".star-4").addClass("fa-star-o");
+                            $(".star-5").addClass("fa-star-o");
+                        }
+                        else if(idNew=="star-2"){
+                            $(".star-1").removeClass("fa-star-o");
+                            $(".star-1").addClass("fa-star");
+                            $(".star-2").removeClass("fa-star-o");
+                            $(".star-2").addClass("fa-star");
+                            $(".star-3").removeClass("fa-star");
+                            $(".star-4").removeClass("fa-star");
+                            $(".star-5").removeClass("fa-star");
+                            $(".star-3").addClass("fa-star-o");
+                            $(".star-4").addClass("fa-star-o");
+                            $(".star-5").addClass("fa-star-o");
+                        }
+                        else if(idNew=="star-3"){
+                            $(".star-1").removeClass("fa-star-o");
+                            $(".star-1").addClass("fa-star");
+                            $(".star-2").removeClass("fa-star-o");
+                            $(".star-2").addClass("fa-star");
+                            $(".star-3").removeClass("fa-star-o");
+                            $(".star-3").addClass("fa-star");
+                            $(".star-4").removeClass("fa-star");
+                            $(".star-5").removeClass("fa-star");
+                            $(".star-4").addClass("fa-star-o");
+                            $(".star-5").addClass("fa-star-o");
+                        }
+                        else if(idNew=="star-4"){
+                            $(".star-1").removeClass("fa-star-o");
+                            $(".star-1").addClass("fa-star");
+                            $(".star-2").removeClass("fa-star-o");
+                            $(".star-2").addClass("fa-star");
+                            $(".star-3").removeClass("fa-star-o");
+                            $(".star-3").addClass("fa-star");
+                            $(".star-4").removeClass("fa-star-o");
+                            $(".star-4").addClass("fa-star");
+                            $(".star-5").removeClass("fa-star");
+                            $(".star-5").addClass("fa-star-o");
+                        }
+                        else if(idNew=="star-5"){
+                            $(".star-1").removeClass("fa-star-o");
+                            $(".star-1").addClass("fa-star");
+                            $(".star-2").removeClass("fa-star-o");
+                            $(".star-2").addClass("fa-star");
+                            $(".star-3").removeClass("fa-star-o");
+                            $(".star-3").addClass("fa-star");
+                            $(".star-4").removeClass("fa-star-o");
+                            $(".star-4").addClass("fa-star");
+                            $(".star-5").removeClass("fa-star-o");
+                            $(".star-5").addClass("fa-star");
+                        }
+                        $(document).on("click",".send-rate",function(){
+                            console.log("sent");
+
+                            var idS=this.id.split("-");
+                            $("."+idS[1]+"-"+idS[2]).hide();
+                            $(".star-"+idS[2]).removeClass("star");
+                        });
+                    });
+                    
+                    
+                    
+                    $(document).on("click",".cancel",function(){
+                        var idS=this.id.split("-");
+                        console.log(idS);
+                        $(".cancel-"+idS[2]+"-"+idS[3]).hide();
+                        $(".split-"+idS[2]+"-"+idS[3]).hide();
+                        $(".status-"+idS[2]+"-"+idS[3]).addClass("red-text");
+                        $(".status-"+idS[2]+"-"+idS[3]).text("Cancelled");
+                    });
+//                    
+//                    var counter2=1;
+//                    $(document).on("click","#add-participant",function(){
+////                        console.log('a');
+//                        counter2++;
+//                        $("#participants").append('<tr id="participant-'+counter2+'-menu-1">'
+//                                                +'<td><input type="email" id="email-'+counter2+'" name="email-'+counter2+'"/></td>'
+//                                                +'<td><select id="'+counter2+'-menu-1" name="'+counter2+'-menu-1"><option>Orange Juice</option></select></td>'
+//                                                +'<td><input type="text" id="'+counter2+'-percentage-1" name="'+counter2+'-percentage-1"></td>'
+//                                                +'</tr>'
+//                                                +'<tr>'
+//                                                +'<td><span class="blue-text add-menu" id="add-menu-'+counter2+'"><i class="material-icons left">add</i> Menu</span></td>'
+//                                                +'<td colspan="2"></td>'
+//                                                +'</tr>'); 
+//                        
+//                        
+//                    });
+//                    var counter3=1;
+//                    $(document).on('click','.add-menu',function(){
+//                        counter3++;
+//                        var idS=this.id.split("-");
+//                        
+//                        $("#participant-"+idS[2]+'-menu-1').append('<tr id="participant-'+counter2+'-menu-'+counter3+'">'
+//                                                +'<td></td>'
+//                                                +'<td><select id="'+counter2+'-menu-'+counter3+'" name="'+counter2+'-menu-'+counter3+'"><option>Orange Juice</option></select></td>'
+//                                                +'<td><input type="text" id="'+counter2+'-percentage-'+counter3+'" name="'+counter2+'-percentage-'+counter3+'"></td>'
+//                                                +'</tr>'); 
+//                    });
+//                    
+                    
+                });
+                
+    
+
+            </script>
+
+        
+        
+    </body>
+</html>
