@@ -1,9 +1,10 @@
 <?php
 	session_start();
-	if (isset($_SESSION['username']) && isset($_SESSION['password'])){
-		header("Location: index.php");
+	if(isset($_SESSION['secret'])){
+		header('Location: index.php');
 	}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,13 +17,14 @@
 <body>
 	<h1 class="black">Login Page</h1>
 	<div id="avator"></div>
-	<section class="education">
-		<?php
-			if(isset($_SESSION['error'])){
-				echo "<p class='red'>".$_SESSION['error']."</p>";
-			};
-		?>
+	<section>
+		
 		<form method="POST" action="authenticate.php">
+			<?php
+				if(isset($_SESSION['error'])){
+					echo "<p class='red'>".$_SESSION['error'].'</p>';
+				}
+			?>
             <p class="black">
 				username:<input type="text" placeholder="username" name="username"/>
 			</p>

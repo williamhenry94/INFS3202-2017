@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	if (!isset($_SESSION['username']) && !isset($_SESSION['password'])){
-		header("Location: login.php");
+	if(!isset($_SESSION['secret'])){
+		header('Location: login.php');
 	}
 ?>
 
