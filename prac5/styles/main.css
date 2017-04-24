@@ -1,0 +1,58 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, 
+body 
+{
+	text-align: center;
+}
+
+.about 
+{
+	background-color: skyblue;
+	padding: 12px 0;
+	line-height: 2em;
+}
+
+.contact
+{
+	line-height: 1.5em;
+}
+
+#avator
+{
+	display: block;
+	width: 180px;
+	height: 200px;
+	border-radius: 90px;
+	background-image: url('../images/avator.jpg');
+	background-position: center;
+	background-size: cover;
+	border: 3px solid white;
+	box-shadow: 0 2px 3px #333;
+	margin: 20px auto;
+}
+
+table 
+{
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+
+td
+{
+	border: 1px solid #333;
+	padding: 4px;
+}
+
+.red{
+	color: red;
+}
+
+.black{
+	color: black;
+}
